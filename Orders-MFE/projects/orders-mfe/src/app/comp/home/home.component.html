@@ -1,0 +1,23 @@
+Note : Filter by Customer Name
+<br>
+<table class="order-table">
+    <thead>
+      <tr>
+        <th>Order No</th>
+        <th>Order Date</th>
+        <th>Ordered Item</th>
+        <th>Ordered Quantity</th>
+        <th>Customer Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of orders">
+        <td>{{order.orderNo}}</td>
+        <td>{{order.orderDate}}</td>
+        <td>{{order.orderedItem}}</td>
+        <td>{{order.orderedQuantity}}</td>
+        <td>{{order.customerName}}</td>
+      </tr>
+    </tbody>
+  </table>
+  

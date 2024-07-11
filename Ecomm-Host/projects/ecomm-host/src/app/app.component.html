@@ -1,0 +1,19 @@
+<h1>Host</h1>
+<h2>Filter Customer and Orders</h2>
+<div>
+  <div class="input-container">
+    <label for="simpleInput">Enter Value :</label>
+    <input id="simpleInput" placeholder="Enter Value" [(ngModel)]="inputValue" (ngModelChange)="onChangeText()" type="text" class="simple-input">
+  </div>
+</div>
+<br>
+<hr>
+<div class="links">
+  <a [routerLink]="['']">Home</a>
+
+  <a [routerLink]="['customer']">Customer</a>
+
+  <a [routerLink]="['orders']">Orders</a>
+</div>
+<hr>
+<router-outlet></router-outlet>
